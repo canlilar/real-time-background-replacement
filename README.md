@@ -30,20 +30,30 @@ $ git clone https://github.com/neatpun/real-time-background-replacement
 
 1. Live Webcam Front
 * ```cd "Live Webcam Front" ``` 
-* install dependencies
+* ```pip3 install -r requirements.txt```
 * ```python live_webcam.py ```
+* your code will just hang if you run this in GCP
 
 2. Server Front
 * ```cd "Server Front"```
-* install dependencies
+* ```pip3 install -r requirements.txt```
 * ```FLASK_APP=index.py flask run```
-* then open localhost:5000
+* then open localhost:5000 by clicking the hyperlink to it in your terminal
 * provide video and background image
 * after processing download of required video will begin
 
 3. Live Stream Output
 * ```cd "Live Stream Output"```
-* install dependencies
+* ```pip3 install -r requirements.txt``` (have not created this file yet - not sure if we need it)
 * connect any mobile device to same network and stream video.
 * provide the ip address of mobile device in **IP_Webcam_Out.py**
 * ```python IP_Webcam_Out.py```
+
+4. Live Webcam in Flask App
+Accesses users webcam in the browers from a Flask App
+* ```cd "Live Webcam App"```
+* ---- Below is TODO ------
+* ```pip3 install -r requirements.txt```
+* ```FLASK_APP=app.py flask run```
+* then open localhost:5000
+* rest is TBD
