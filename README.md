@@ -49,7 +49,7 @@ $ git clone https://github.com/neatpun/real-time-background-replacement
 * provide the ip address of mobile device in **IP_Webcam_Out.py**
 * ```python IP_Webcam_Out.py```
 
-4. Live Webcam in Flask App
+4. Live Webcam in Flask App (test mode)
 Accesses users webcam in the browers from a Flask App
 * ```cd "Live Webcam App"```
 * ---- Below is TODO ------
@@ -57,3 +57,4 @@ Accesses users webcam in the browers from a Flask App
 * ```FLASK_APP=app.py flask run```
 * then open localhost:5000
 * rest is TBD
+* See the README file in the Live Webcam App for instructions to set up Google services

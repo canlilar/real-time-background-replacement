@@ -140,5 +140,16 @@ If you get an error on Windows similar to this: `running scripts is disabled on 
 
     Set-ExecutionPolicy Unrestricted -Scope Process
 
-## Get Started Coding!
-Alright, now it's your time to start coding. Take a look at the main.py to see how it works, and how you should improve it!
+## Deploying changes to the app
+When you deploy an update, a new version of your default service is created and traffic is automatically routed to the latest version. To deploy:
+
+From the "Live Webcam App" folder, run the following command:
+
+    gcloud app deploy
+
+This is the same command you used in Deploying Your Web Service.
+
+Confirm that a new version is listed in the Google Cloud console:
+
+[View versions](https://console.cloud.google.com/appengine/versions?_ga=2.165852221.2095204613.1656423274-1504673532.1655484565)
+
