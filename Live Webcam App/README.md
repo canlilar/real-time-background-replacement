@@ -140,9 +140,15 @@ If you get an error on Windows similar to this: `running scripts is disabled on 
 
     Set-ExecutionPolicy Unrestricted -Scope Process
 
+## View app
 To view your application in the web browser run:
 
     gcloud app browse
+
+# Debugging
+You can stream logs from the command line by running:
+
+    gcloud app logs tail -s default
 
 ## Deploying changes to the app
 When you deploy an update, a new version of your default service is created and traffic is automatically routed to the latest version. To deploy:
